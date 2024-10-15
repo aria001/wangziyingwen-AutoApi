@@ -21,6 +21,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+    - name: install python3
+      run: |
+        apt install python3-xyz
     - name: Install requests #安装requests模块
       run: |
         pip install requests
